@@ -18,10 +18,18 @@ export default class Content extends Component {
 
   componentDidMount() {
     // Once the component has mounted, get the data and reflect that data on the state.
+    this.setState({
+      tabs: tabData,
+      cards: cardData
+    });
+
   }
 
   changeSelected = tab => {
     // this function should take in the tab and update the state with the new tab.
+    this.setState({
+      selected: tab
+    })
   };
 
   filterCards = () => {
@@ -37,7 +45,18 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
-    return this.state.cards;
+  //  assign a variable to the result of the conditional expression
+    let select = [];
+
+    (this.state.selected === 'all')
+    // if the selected tab in state is 'all'
+      ? select = this.state.cards
+      // it should return all of the cards 
+      : select = this.state.cards.filter(
+      // else use filter() to return only the cards that have been selected
+        card => card.tab === this.state.selected)
+      // return the variable
+    return select;
   };
 
   render() {
