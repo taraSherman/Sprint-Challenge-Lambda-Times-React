@@ -16,7 +16,7 @@ const TopBarDiv = styled.div`
   @media (min-width: 1280px) {
     .top-bar .container {
       width: 1280px;
-    }`
+    }`;
 
 const ContainerDiv = styled.div`
   width: 100%;
@@ -26,7 +26,7 @@ const ContainerDiv = styled.div`
   flex-direction: row;
   color: #fff;
   letter-spacing: 1px;
-  padding: 0 10px;`
+  padding: 0 10px;`;
 
 const ContainerLeftDiv = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ const ContainerLeftDiv = styled.div`
     cursor: pointer;
     margin-right: 25%;
     font-weight: bold;
-  }`
+  }`;
 
 const ContainerCenterDiv = styled.div`
   display: flex;
@@ -57,7 +57,7 @@ const ContainerCenterDiv = styled.div`
   }
   span:hover {
     text-decoration: underline;
-  }`
+  }`;
 
 const ContainerRightDiv = styled.div`
   display: flex;
@@ -69,7 +69,7 @@ const ContainerRightDiv = styled.div`
   font-weight: bold;
   span {
     cursor: pointer;
-  }`
+  }`;
 
 const TopBar = () => {
   return (
