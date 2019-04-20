@@ -27,7 +27,8 @@ const HeaderDiv = styled.div`
   flex: 8;
   text-align: center;
   color: #000;
-  }`;
+  }
+  `;
 
 const DateSpan = styled.span`
   align-self: flex-end;
@@ -35,7 +36,8 @@ const DateSpan = styled.span`
   font-weight: bold;
   letter-spacing: 1px;
   margin-left: 25px;
-  flex: 1;`;
+  flex: 1;
+  `;
 
 const TempSpan = styled.span`
   align-self: flex-end;
@@ -44,7 +46,8 @@ const TempSpan = styled.span`
   letter-spacing: 1px;
   text-align: right;
   margin-right: 25px;
-  flex: 1;`;
+  flex: 1;
+  `;
   
 const Header = () => {
   return (
